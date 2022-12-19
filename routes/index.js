@@ -166,11 +166,7 @@ router.get('/clients',
   res.render('clients')
 });
 
-router.get('/home',
-(req, res) => {
-  res.render('home')
-}
-)
+
 
 //added route for user
 router.get("/user", connectEnsureLogin.ensureLoggedIn(), (req, res) =>

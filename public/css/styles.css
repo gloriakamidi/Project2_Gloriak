@@ -35,7 +35,7 @@ img{
 /* The navbar */
 nav {
   font-size: 1em;
-  font-font-weight: bold;
+  font-weight: bold;
   float: left;
 }
 nav ul {
@@ -143,19 +143,19 @@ img.Avatar {
 
 .listing-table th {
   padding: 10px;
-  border-bottom: 1px solid #666;
-  background: #000;
-  color: #fff;
+  border-bottom: 1px solid midnightblue;
+  background: burlywood;
+  color: #f1f1f1;
 }
 .listing-table th:first-child {
-  border-right: 1px solid #666;
+  border-right: 1px solid papayawhip;
 }
 .listing-table td {
   padding: 10px;
-  border-bottom: 1px solid #666;
+  border-bottom: 1px solid brown;
 }
 .listing-table td:first-child {
-  border-right: 1px solid #666;
+  border-right: 1px solid papayawhip;
 }
 
 @media screen and (max-width: 300px) {

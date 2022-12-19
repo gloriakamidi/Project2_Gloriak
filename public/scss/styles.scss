@@ -1,5 +1,5 @@
 @import "colors.scss";
-@import "variables.scss";
+
 
 
 body {
@@ -36,17 +36,17 @@ body {
 /* The navbar */
 nav {
 	font-size: 1em;
-	font-font-weight: bold;
+	font-weight: bold;
 	float: left;
 	ul {
 		list-style-type: none;
 		li {
 			float: left;
 			margin: 0 5px 0 0;
-			color: goldenrod;
+			color: $color2;
 			a {
 				text-decoration: none;
-				color: goldenrod;
+				color: $color2;
 				&:hover {
 					text-decoration: underline;
 				}
@@ -62,7 +62,7 @@ input[type=text] {
 	margin: 5px 0 22px 0;
 	display: inline-block;
 	border: none;
-	background: #f1f1f1;
+	background: $background;
 	width: 100%;
 	padding: 12px 20px;
 	margin: 8px 0;
@@ -80,7 +80,7 @@ input[type=password] {
 	margin: 5px 0 22px 0;
 	display: inline-block;
 	border: none;
-	background: #f1f1f1;
+	background: $background;
 	width: 100%;
 	padding: 12px 20px;
 	margin: 8px 0;
@@ -95,7 +95,7 @@ input[type=name] {
 	}
 }
 hr {
-	border: 1px solid #f1f1f1;
+	border: 1px solid $background;
 	margin-bottom: 25px;
 }
 button {
@@ -142,18 +142,18 @@ img.Avatar {
 .listing-table {
 	th {
 		padding: 10px;
-		border-bottom: 1px solid #666;
-		background: #000;
-		color: #fff;
+		border-bottom: 1px solid midnightblue;
+		background: burlywood;
+		color: $background;
 		&:first-child {
-			border-right: 1px solid #666;
+			border-right: 1px solid $color3;
 		}
 	}
 	td {
 		padding: 10px;
-		border-bottom: 1px solid #666;
+		border-bottom: 1px solid brown;
 		&:first-child {
-			border-right: 1px solid #666;
+			border-right: 1px solid $color3;
 		}
 	}
 }
@@ -163,6 +163,9 @@ img.Avatar {
 		width: 100%;
 	}
 	.registerbtn {
+		width: 100%;
+	}
+	.img {
 		width: 100%;
 	}
 }
