@@ -4,10 +4,58 @@
 
 body {
 	font-family: Arial, Helvetica, sans-serif;
+	background-image: url('images/img4p.jpg');
+  	background-image: cover;
+ 	background-attachment: fixed;
 }
 * {
 	box-sizing: border-box;
 }
+.bg-img {
+  /* The image used */
+  background-image: url("img_nature.jpg");
+
+  min-height: 380px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  /* Needed to position the navbar */
+  position: relative;
+}
+
+/* Position the navbar container inside the image */
+.container {
+  position: absolute;
+  margin: 20px;
+  width: auto;
+}
+
+/* The navbar */
+nav {
+	font-size: 1em;
+	font-font-weight: bold;
+	float: left;
+	ul {
+		list-style-type: none;
+		li {
+			float: left;
+			margin: 0 5px 0 0;
+			color: rgb(255, 255, 255);
+			a {
+				text-decoration: none;
+				color: rgb(255, 255, 255);
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}
+
+
 input[type=text] {
 	width: 100%;
 	padding: 15px;
@@ -62,23 +110,16 @@ button {
 		opacity: 1;
 	}
 }
-.signinbtn {
-	width: auto;
-	padding: 10px 18px;
-	background-color: #f44336;
-}
-.signupbtn {
-	width: auto;
-	padding: 10px 18px;
-	background-color: #f44336;
+button:hover {
+  opacity: 1;
 }
 .imgcontainer {
 	text-align: center;
 	margin: 24px 0 12px 0;
 }
-img.avatar {
-	width: 40%;
-	border-radius: 50%;
+img.Avatar {
+  width: 5%;
+  border-radius: 50%; 
 }
 .container {
 	padding: 16px;
