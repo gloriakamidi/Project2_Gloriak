@@ -1,0 +1,39 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='StyleSheet' href='css/styles.css' type='text/css')
+  title Document
+  -data = data || {}
+h2 Log In Form
+form(action='/login' method='post')
+  .imgcontainer
+    img.avatar(src='images/img5p.png' alt='Avatar')
+  label(for='name')
+    b Name
+  input(
+    type='text' 
+    placeholder='Enter Name' 
+    name='name' 
+    required=''
+    value=data.name
+    )
+  label(for='psw')
+    b Password
+  input(
+    type='password' 
+    placeholder='Enter Password' 
+    name='psw' 
+    required=''
+    value= data.password
+    )
+  button(type='submit') Login
+  label
+    input(type='checkbox' checked='checked' name='remember')
+    |  Remember me
+  .container(style='background-color:#f1f1f1')
+    a(href='/signup') Sign Up
+
+  
+  
